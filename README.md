@@ -1,6 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# intro
+
+    This is a collection of my Showcase of all React.js apps I've made. This
+    is only meant to be viewed as example of coding style and little focus
+    has been put on the details of the UI/UX.
 
 ## Available Scripts
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 
