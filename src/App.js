@@ -1,12 +1,13 @@
 import React from "react";
-import { Link, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import ContentShopping from "./pages/shoppingCart/ContentShopping";
 import ContentGame from "./pages/wordGame/ContentGame";
 import Home from "./pages/home/HomeContent";
-
+import Header from "./components/Header";
 function App() {
   return (
     <div>
+      <Header />
       <main>
         <Switch>
           <Route exact path="/">

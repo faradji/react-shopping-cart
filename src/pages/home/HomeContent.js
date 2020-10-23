@@ -1,9 +1,7 @@
 import React from "react";
-import Header from "./components/Header";
 function Home() {
   return (
     <div>
-      <Header />
       <h1>Home Page</h1>
       <p>
         This is a collection of my Showcase of all React.js apps I've made. This

@@ -1,6 +1,5 @@
 import React from "react";
 import useWordGame from "./hooks/useWordGame";
-import Header from "./components/Header";
 import "./styles.css";
 
 function contentGame() {
@@ -17,7 +16,6 @@ function contentGame() {
 
   return (
     <div>
-      <Header />
       <br />
       <h1>How fast do you type?</h1>
       <textarea
