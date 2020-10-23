@@ -7,18 +7,12 @@ function Header() {
   const cartClassName =
     cartItems.length > 0 ? "ri-shopping-cart-fill" : "ri-shopping-cart-line";
   return (
-    <header>
-      <Link to="/">
-        <h2>Home</h2>
-      </Link>
-      <Link to="/shoppingcart">
-        <h2>shopping</h2>
-      </Link>
-      <Link to="/wordgame">
-        {" "}
-        <h2>word game</h2>{" "}
-      </Link>
-
+    <header
+      style={{
+        justifyContent: "center",
+        paddingRight: "5%",
+      }}
+    >
       <Link to="/shoppingcart/cart">
         <i className={`${cartClassName} ri-fw ri-2x`}></i>
       </Link>

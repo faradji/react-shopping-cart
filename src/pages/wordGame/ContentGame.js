@@ -1,6 +1,5 @@
 import React from "react";
 import useWordGame from "./hooks/useWordGame";
-import Header from "./components/Header";
 import "./styles.css";
 
 function contentGame() {
@@ -12,12 +11,11 @@ function contentGame() {
     textBoxRef,
     wordCount,
     text,
+    wordPerMin,
     // eslint-disable-next-line react-hooks/rules-of-hooks
-  } = useWordGame(5);
-
+  } = useWordGame(10);
   return (
     <div>
-      <Header />
       <br />
       <h1>How fast do you type?</h1>
       <textarea
@@ -32,6 +30,7 @@ function contentGame() {
       </button>
 
       {wordCount > 0 && <h1>Word count: {wordCount}</h1>}
+      {wordPerMin > 0 && <h1>Average word per minutes: {wordPerMin}</h1>}
     </div>
   );
 }

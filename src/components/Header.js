@@ -10,8 +10,7 @@ function Header() {
         <h2>shopping</h2>
       </Link>
       <Link to="/wordgame">
-        {" "}
-        <h2>word game</h2>{" "}
+        <h2>word game</h2>
       </Link>
     </header>
   );
