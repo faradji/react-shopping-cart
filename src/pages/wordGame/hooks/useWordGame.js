@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 function useWordGame(startingTime = 10) {
   const [timeRemaining, setTimeRemaining] = useState(startingTime);
   const [text, setText] = useState("");
+  const [wordPerMin, setWordPerMin] = useState(0);
   const [wordCount, setWordCount] = useState(0);
   const [isTimeRunning, setIsTimeRunning] = useState(false);
   const textBoxRef = useRef(null);
@@ -24,6 +25,9 @@ function useWordGame(startingTime = 10) {
   function calculateWordCount(text) {
     const wordsArr = text.trim().split(" ");
     const filteredWords = wordsArr.filter((word) => word !== "").length;
+    setWordPerMin((prev) => {
+      return filteredWords * 6;
+    });
     return filteredWords;
   }
 
@@ -54,6 +58,7 @@ function useWordGame(startingTime = 10) {
     wordCount,
     text,
     isTimeRunning,
+    wordPerMin,
   };
 }
 
