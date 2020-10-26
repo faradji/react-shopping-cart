@@ -2,7 +2,7 @@ import React from "react";
 import useWordGame from "./hooks/useWordGame";
 import "./styles.css";
 
-function contentGame() {
+function ContentGame() {
   const {
     timeRemaining,
     isTimeRunning,
@@ -12,7 +12,6 @@ function contentGame() {
     wordCount,
     text,
     wordPerMin,
-    // eslint-disable-next-line react-hooks/rules-of-hooks
   } = useWordGame(10);
   return (
     <div>
@@ -30,9 +29,9 @@ function contentGame() {
       </button>
 
       {wordCount > 0 && <h1>Word count: {wordCount}</h1>}
-      {wordPerMin > 0 && <h1>Average word per minutes: {wordPerMin}</h1>}
+      {wordPerMin > 0 && <h1>Average words per minutes: {wordPerMin}</h1>}
     </div>
   );
 }
 
-export default contentGame;
+export default ContentGame;

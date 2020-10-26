@@ -10,7 +10,7 @@ function Header() {
     <header
       style={{
         justifyContent: "center",
-        paddingRight: "5%",
+        paddingRight: "38%",
       }}
     >
       <Link to="/shoppingcart/cart">

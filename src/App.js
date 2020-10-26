@@ -2,8 +2,10 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import ContentShopping from "./pages/shoppingCart/ContentShopping";
 import ContentGame from "./pages/wordGame/ContentGame";
-import Home from "./pages/home/HomeContent";
+import RobotContent from "./pages/robot/RobotContent";
+import HomeContent from "./pages/home/HomeContent";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div>
@@ -11,7 +13,7 @@ function App() {
       <main>
         <Switch>
           <Route exact path="/">
-            <Home />
+            <HomeContent />
           </Route>
 
           <Route path="/shoppingcart">
@@ -21,11 +23,14 @@ function App() {
           <Route path="/wordgame">
             <ContentGame />
           </Route>
+          <Route path="/robot">
+            <RobotContent />
+          </Route>
         </Switch>
       </main>
       <br />
       <footer>
-        <div> Made by ali </div>
+        <Footer />
       </footer>
     </div>
   );
