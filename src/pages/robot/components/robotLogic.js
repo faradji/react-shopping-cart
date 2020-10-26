@@ -5,44 +5,44 @@ function UserInputForm() {
   const [value, useValue] = useState("");
   const [position, usePosition] = useState(0);
   const [currentPos, useCurrentPos] = useState([0, 0]);
-  const xyPos = [
-    [0, 0],
-    [0, 1],
-    [0, 2],
-    [0, 3],
-    [0, 4],
-    [1, 0],
-    [1, 1],
-    [1, 2],
-    [1, 3],
-    [1, 4],
-    [2, 0],
-    [2, 1],
-    [2, 2],
-    [2, 3],
-    [2, 4],
-    [3, 0],
-    [3, 1],
-    [3, 2],
-    [3, 3],
-    [3, 4],
-    [4, 0],
-    [4, 1],
-    [4, 2],
-    [4, 3],
-    [4, 4],
-    [5, 0],
-    [5, 1],
-    [5, 2],
-    [5, 3],
-    [5, 4],
-  ];
 
   const handleChange = (e) => {
     // set state of value to the input provided by the user
     useValue(e.target.value);
   };
   useEffect(() => {
+    const xyPos = [
+      [0, 0],
+      [0, 1],
+      [0, 2],
+      [0, 3],
+      [0, 4],
+      [1, 0],
+      [1, 1],
+      [1, 2],
+      [1, 3],
+      [1, 4],
+      [2, 0],
+      [2, 1],
+      [2, 2],
+      [2, 3],
+      [2, 4],
+      [3, 0],
+      [3, 1],
+      [3, 2],
+      [3, 3],
+      [3, 4],
+      [4, 0],
+      [4, 1],
+      [4, 2],
+      [4, 3],
+      [4, 4],
+      [5, 0],
+      [5, 1],
+      [5, 2],
+      [5, 3],
+      [5, 4],
+    ];
     useCurrentPos(xyPos[position]);
   }, [position]);
 
@@ -112,7 +112,8 @@ function UserInputForm() {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Your current position is {currentPos ? currentPos : "0,0"} <br />
+        Your current position is {currentPos ? currentPos.toString() : "0,0"}{" "}
+        <br />
       </label>
       <label>
         Directions:
