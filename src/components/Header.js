@@ -12,6 +12,9 @@ function Header() {
       <Link to="/wordgame">
         <h2>word game</h2>
       </Link>
+      <Link to="/robot">
+        <h2>robot game</h2>
+      </Link>
     </header>
   );
 }

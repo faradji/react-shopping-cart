@@ -6,8 +6,7 @@ import Header from "./components/Header";
 import Cart from "./pages/Cart";
 import Photos from "./pages/Photos";
 
-function contentShopping() {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+function ContentShopping() {
   const { path } = useRouteMatch();
 
   return (
@@ -28,4 +27,4 @@ function contentShopping() {
   );
 }
 
-export default contentShopping;
+export default ContentShopping;
