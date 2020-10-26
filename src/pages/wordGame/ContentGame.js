@@ -30,7 +30,7 @@ function contentGame() {
       </button>
 
       {wordCount > 0 && <h1>Word count: {wordCount}</h1>}
-      {wordPerMin > 0 && <h1>Average word per minutes: {wordPerMin}</h1>}
+      {wordPerMin > 0 && <h1>Average words per minutes: {wordPerMin}</h1>}
     </div>
   );
 }

@@ -2,8 +2,10 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import ContentShopping from "./pages/shoppingCart/ContentShopping";
 import ContentGame from "./pages/wordGame/ContentGame";
+
 import Home from "./pages/home/HomeContent";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div>
@@ -25,7 +27,7 @@ function App() {
       </main>
       <br />
       <footer>
-        <div> Made by ali </div>
+        <Footer />
       </footer>
     </div>
   );
