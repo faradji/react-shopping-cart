@@ -6,7 +6,7 @@ function ContextProvider({ children }) {
   const [allPhotos, setAllPhotos] = useState([]);
   const [cartItems, setCartItems] = useState([]);
 
-  const url = "https://faradji.se/images/images.json";
+  const url = "https://411.se/images/images.json";
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
